@@ -11,6 +11,7 @@ defmodule Wechat.Mixfile do
       deps: deps(),
       description: description(),
       package: package(),
+      elixirc_options: [warnings_as_errors: true],
       test_coverage: [tool: ExCoveralls],
       preferred_cli_env: [
         vcr: :test, "vcr.delete": :test, "vcr.check": :test, "vcr.show": :test,
